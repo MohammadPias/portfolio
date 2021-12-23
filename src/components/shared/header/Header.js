@@ -23,7 +23,7 @@ const Header = () => {
         setAnchorElNav(null);
     };
     const handleDownload = () => {
-        window.location.href = "https://drive.google.com/file/d/1fRJW4S-7P3vFMXZ9i9e1O68PSs8WXj-x/view"
+        window.location.href = "https://drive.google.com/file/d/1i0ViNQZClGij9zFUElSv0irpqYZVc_ci/view?usp=sharing"
     }
     return (
         <Container>

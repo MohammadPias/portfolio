@@ -1,0 +1,17 @@
+.sectionContainer{
+    background-color: #0f0933;
+    padding: 0 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+}
+
+.headingBox{
+    background-color: #040449;
+    padding: 20px 35px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: -40px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+}

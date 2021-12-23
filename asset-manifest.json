@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d2b06350.chunk.css",
+    "main.js": "/portfolio/static/js/main.17c0a38d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.17c0a38d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.764065b0.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.764065b0.js.map",
+    "static/css/2.1c0f5cc7.chunk.css": "/portfolio/static/css/2.1c0f5cc7.chunk.css",
+    "static/js/2.b7e1d365.chunk.js": "/portfolio/static/js/2.b7e1d365.chunk.js",
+    "static/js/2.b7e1d365.chunk.js.map": "/portfolio/static/js/2.b7e1d365.chunk.js.map",
+    "static/js/3.9e80bd75.chunk.js": "/portfolio/static/js/3.9e80bd75.chunk.js",
+    "static/js/3.9e80bd75.chunk.js.map": "/portfolio/static/js/3.9e80bd75.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.1c0f5cc7.chunk.css.map": "/portfolio/static/css/2.1c0f5cc7.chunk.css.map",
+    "static/css/main.d2b06350.chunk.css.map": "/portfolio/static/css/main.d2b06350.chunk.css.map",
+    "static/js/2.b7e1d365.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b7e1d365.chunk.js.LICENSE.txt",
+    "static/media/3.d36dd9be.png": "/portfolio/static/media/3.d36dd9be.png",
+    "static/media/babycare-1.149723d4.png": "/portfolio/static/media/babycare-1.149723d4.png",
+    "static/media/banner.71d29cb0.jpg": "/portfolio/static/media/banner.71d29cb0.jpg",
+    "static/media/medicare-1.f35e01b6.png": "/portfolio/static/media/medicare-1.f35e01b6.png",
+    "static/media/t2v-1.e3fdffe8.png": "/portfolio/static/media/t2v-1.e3fdffe8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.764065b0.js",
+    "static/css/2.1c0f5cc7.chunk.css",
+    "static/js/2.b7e1d365.chunk.js",
+    "static/css/main.d2b06350.chunk.css",
+    "static/js/main.17c0a38d.chunk.js"
+  ]
+}

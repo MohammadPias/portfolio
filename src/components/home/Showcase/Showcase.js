@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,10 +17,27 @@ import medicare from '../../../images/projects/medicare-1.png';
 import SwiperCore, {
     EffectCoverflow, Pagination, Autoplay
 } from 'swiper/core';
+import { Link } from 'react-router-dom';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 
 
 const Showcase = () => {
+    const handleT2Vlink = () => {
+        console.log('click triggered')
+        window.open(
+            "/t2p", "_blank"
+        )
+    }
+    const handleBabyCarelink = () => {
+        window.open(
+            "/babyCare", "_blank"
+        )
+    }
+    const handleMediCarelink = () => {
+        window.open(
+            "/mediCare", "_blank"
+        )
+    }
     return (
         <Container className='sectionContainer' sx={{ textAlign: 'center' }}>
             <Box className='headingBox'>
@@ -42,13 +59,35 @@ const Showcase = () => {
                         "modifier": 1,
                         "slideShadows": true
                     }}
-                    pagination={true}
+                    pagination={{ clickable: true }}
                     loop={true}
                     autoplay={true}
                     className="mySwiper">
-                    <SwiperSlide><img src={t2v} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={babycare} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={medicare} alt="" /></SwiperSlide>
+                    <SwiperSlide onClick={() => handleT2Vlink()} className="slider">
+                        <img src={t2v} alt="" />
+                        <Box className="slide-content">
+                            <Typography variant='h6'>Travel 2 Paradise</Typography>
+                            <button className='button-regular'>Details</button>
+                        </Box>
+                    </SwiperSlide>
+                    <Link to="/">
+                        <SwiperSlide onClick={() => handleBabyCarelink()} className="slider">
+                            <img src={babycare} alt="" />
+                            <Box className="slide-content">
+                                <Typography variant='h6'>BabyCare Products</Typography>
+                                <button className='button-regular'>Details</button>
+                            </Box>
+                        </SwiperSlide>
+                    </Link>
+                    <Link to="/">
+                        <SwiperSlide onClick={() => handleMediCarelink()} className="slider">
+                            <img src={medicare} alt="" />
+                            <Box className="slide-content">
+                                <Typography variant='h6'>Medicare Magician</Typography>
+                                <button className='button-regular'>Details</button>
+                            </Box>
+                        </SwiperSlide>
+                    </Link>
                 </Swiper>
             </Box>
         </Container>

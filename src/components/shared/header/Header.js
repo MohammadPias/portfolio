@@ -23,7 +23,9 @@ const Header = () => {
         setAnchorElNav(null);
     };
     const handleDownload = () => {
-        window.location.href = "https://drive.google.com/file/d/1i0ViNQZClGij9zFUElSv0irpqYZVc_ci/view?usp=sharing"
+        /* window.location.href = "https://drive.google.com/file/d/1i0ViNQZClGij9zFUElSv0irpqYZVc_ci/view?usp=sharing" */
+        window.open(
+            "https://drive.google.com/file/d/1i0ViNQZClGij9zFUElSv0irpqYZVc_ci/view?usp=sharing", "_blank");
     }
     return (
         <Container>
@@ -34,7 +36,7 @@ const Header = () => {
                             variant="h5"
                             noWrap
                             component="div"
-                            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, color: "#ed1e79", fontWeight: 'bold' }}
+                            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, color: "#ed1e79", fontWeight: 'bold', flexGrow: 1 }}
                         >
                             Noor Mohammad Pias
                         </Typography>
@@ -67,13 +69,9 @@ const Header = () => {
                                 onClose={handleCloseNavMenu}
                                 sx={{
                                     display: { xs: 'block', md: 'none' },
+
                                 }}
                             >
-                                {/* {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center">{page}</Typography>
-                                    </MenuItem>
-                                ))} */}
                                 <MenuItem onClick={handleCloseNavMenu, handleDownload}>
                                     <Typography textAlign="center">Resume</Typography>
                                 </MenuItem>
@@ -90,21 +88,24 @@ const Header = () => {
                         >
                             Noor Mohammad Pias
                         </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {/* {pages.map((page) => (
-                                <Button
-                                    key={page}
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    {page}
-                                </Button>
-                            ))} */}
+                        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                             <Button
                                 onClick={handleCloseNavMenu, handleDownload}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 Rusume
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                Contact
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                Contact
                             </Button>
                             <Button
                                 onClick={handleCloseNavMenu}
